@@ -14,7 +14,7 @@ java -jar target/sha-benchmarks-0.1.0-SNAPSHOT.jar
 Results
 -------
 
-Intel Core i7-7700T (Kaby Lake), no hardware support
+Intel Core i7-7700T (Kaby Lake), SppedStep and Turbo Mode disabled, no hardware support
 
 single threaded
 
@@ -34,4 +34,26 @@ ShaBenchmarks.jdk                  SHA-1  thrpt   15  14.209 ± 0.334  ops/us
 ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15  16.525 ± 0.326  ops/us
 ShaBenchmarks.jdk                SHA-256  thrpt   15  12.515 ± 0.078  ops/us
 ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15   9.883 ± 0.185  ops/us
+```
+
+Ryzen 7 2700X (Pinnacle Ridge), Zen+
+
+single threaded
+
+```
+Benchmark                    (algorithm)   Mode  Cnt   Score   Error   Units
+ShaBenchmarks.jdk                  SHA-1  thrpt   15  10.764 ± 0.231  ops/us
+ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15   3.972 ± 0.037  ops/us
+ShaBenchmarks.jdk                SHA-256  thrpt   15   9.531 ± 0.273  ops/us
+ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15   2.635 ± 0.041  ops/us
+```
+
+16 threads
+
+```
+Benchmark                    (algorithm)   Mode  Cnt   Score   Error   Units
+ShaBenchmarks.jdk                  SHA-1  thrpt   15  97.196 ± 3.327  ops/us
+ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15  38.995 ± 2.032  ops/us
+ShaBenchmarks.jdk                SHA-256  thrpt   15  90.769 ± 3.323  ops/us
+ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15  27.718 ± 0.424  ops/us
 ```
