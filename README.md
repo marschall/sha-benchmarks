@@ -36,7 +36,7 @@ ShaBenchmarks.jdk                SHA-256  thrpt   15  12.515 ± 0.078  ops/us
 ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15   9.883 ± 0.185  ops/us
 ```
 
-Ryzen 7 2700X (Pinnacle Ridge), Zen+
+Ryzen 7 2700X (Pinnacle Ridge), Zen+, hardware support
 
 single threaded
 
