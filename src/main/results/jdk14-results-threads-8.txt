@@ -1,0 +1,15 @@
+# JMH version: 1.24
+# VM version: JDK 14, OpenJDK 64-Bit Server VM, 14+36
+# VM invoker: /home/marschall/bin/java/zulu14.27.1-ca-jdk14-linux_x64/bin/java
+# VM options: -Xmx4g
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+
+Benchmark                    (algorithm)   Mode  Cnt   Score   Error   Units
+ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15  16.261 ± 0.189  ops/us
+ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15   9.964 ± 0.024  ops/us
+ShaBenchmarks.jdk                  SHA-1  thrpt   15  13.845 ± 0.321  ops/us
+ShaBenchmarks.jdk                SHA-256  thrpt   15  12.654 ± 0.051  ops/us
