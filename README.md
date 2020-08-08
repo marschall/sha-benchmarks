@@ -57,3 +57,8 @@ ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15  38.995 ± 2.032  ops/us
 ShaBenchmarks.jdk                SHA-256  thrpt   15  90.769 ± 3.323  ops/us
 ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15  27.718 ± 0.424  ops/us
 ```
+
+![SHA-1](src/main/results/sha1-result-charts.svg?raw=true "SHA-1")
+
+![SHA-256](src/main/results/sha256-result-charts.svg?raw=true "SHA-256")
+
