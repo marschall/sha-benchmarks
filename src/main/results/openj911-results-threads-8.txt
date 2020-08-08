@@ -10,7 +10,7 @@
 # Benchmark mode: Throughput, ops/time
 
 Benchmark                    (algorithm)   Mode  Cnt   Score   Error   Units
-ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15   9.070 ± 2.935  ops/us
-ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15   7.281 ± 0.196  ops/us
 ShaBenchmarks.jdk                  SHA-1  thrpt   15  13.514 ± 0.407  ops/us
+ShaBenchmarks.bouncy_caslte        SHA-1  thrpt   15   9.070 ± 2.935  ops/us
 ShaBenchmarks.jdk                SHA-256  thrpt   15   9.660 ± 0.298  ops/us
+ShaBenchmarks.bouncy_caslte      SHA-256  thrpt   15   7.281 ± 0.196  ops/us
