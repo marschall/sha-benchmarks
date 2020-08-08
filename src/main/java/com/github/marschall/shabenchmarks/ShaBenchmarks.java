@@ -17,7 +17,7 @@ import org.openjdk.jmh.annotations.State;
 
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
-@State(Scope.Benchmark)
+@State(Scope.Thread)
 public class ShaBenchmarks {
 
   static {
@@ -35,22 +35,22 @@ public class ShaBenchmarks {
 
   @Setup
   public void setup() throws GeneralSecurityException {
-    this.jdkMessageDigest = MessageDigest.getInstance("SHA-1");
+    this.jdkMessageDigest = MessageDigest.getInstance(this.algorithm);
     this.jdkDigest = new byte[this.jdkMessageDigest.getDigestLength()];
 
-    this.bcMessageDigest = MessageDigest.getInstance("SHA-1", BouncyCastleProvider.PROVIDER_NAME);
+    this.bcMessageDigest = MessageDigest.getInstance(this.algorithm, BouncyCastleProvider.PROVIDER_NAME);
     this.bcDigest = new byte[this.bcMessageDigest.getDigestLength()];
   }
 
   @Benchmark
-  public byte[] jdkSha1() throws DigestException {
+  public byte[] jdk() throws DigestException {
     this.jdkMessageDigest.update((byte) 1);
     this.jdkMessageDigest.digest(this.jdkDigest, 0, this.jdkDigest.length);
     return this.jdkDigest;
   }
 
   @Benchmark
-  public byte[] bcSha1() throws DigestException {
+  public byte[] bouncy_caslte() throws DigestException {
     this.bcMessageDigest.update((byte) 1);
     this.bcMessageDigest.digest(this.bcDigest, 0, this.bcDigest.length);
     return this.bcDigest;

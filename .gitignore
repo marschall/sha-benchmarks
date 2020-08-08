@@ -1,2 +1,5 @@
 target/
+dependency-reduced-pom.xml
+results-threads-*.txt
+jmh-result.text
 

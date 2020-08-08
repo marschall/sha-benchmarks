@@ -11,7 +11,7 @@ import org.openjdk.jmh.runner.options.TimeValue;
 public class JmhMain {
 
   public static void main(String[] args) throws RunnerException {
-    runWithRhreads(0);
+    runWithRhreads(1);
     runWithRhreads(Runtime.getRuntime().availableProcessors());
   }
 
