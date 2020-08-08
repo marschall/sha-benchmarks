@@ -14,7 +14,7 @@ java -jar target/sha-benchmarks-0.1.0-SNAPSHOT.jar
 Results
 -------
 
-Intel Core i7-7700T (Kaby Lake)
+Intel Core i7-7700T (Kaby Lake), no hardware support
 
 single threaded
 
